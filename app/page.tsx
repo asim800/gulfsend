@@ -1,4 +1,3 @@
-import Image from "next/image";
 import KanbanBoard from "./components/kanban/KanbanBoard"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"

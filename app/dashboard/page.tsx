@@ -74,8 +74,8 @@ export default function Dashboard() {
       setCopiedKeyId(id)
       toast.success("API key copied to clipboard")
       setTimeout(() => setCopiedKeyId(null), 2000)
-    } catch (err) {
-      toast.error("Failed to copy API key")
+    } catch (error) {
+      toast.error(`Failed to copy API key: ${error instanceof Error ? error.message : 'Unknown error'}`)
     }
   }
 
